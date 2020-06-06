@@ -58,6 +58,10 @@ jobs:
       run: build-sln.bat ${{ matrix.platform }} ${{ matrix.config }}
       shell: cmd
 
+    - name: show env
+      run: set
+      shell: cmd
+
     - name: Install Locale Emulator
       run: choco install locale-emulator -y
       shell: cmd
